@@ -17,6 +17,13 @@ public class Car extends JFrame {
         //make sure to check boundary values as described in the assign
 
         //WRITE YOUR CODE HERE
+        this.posX=deltaX+posX;
+        this.posY=deltaY+posY;
+        if(posX>390){posX = 390;}
+        if(posY>440){posY = 440;}
+        if (posX<10){posX = 10;}
+        if(posY<35){posY = 35;}
+
 
         //Do not change this statement
         repaint();
